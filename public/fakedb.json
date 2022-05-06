@@ -1,0 +1,82 @@
+[
+    {
+      "_id": "62727a927e4c9e4480306176",
+      "price": "$ 738",
+      "img": "https://i.ibb.co/ckc0d9Q/monitor.jpg",
+      "quantity": 36,
+      "sold":23,
+      "supplier": "Mamie Mcdaniel",
+      "product": "Monitor",
+      "description": "This Is The First Time Xiaomi Has Ventured Into The PC Component Space. The New Redmi Display 1A Has A 23.8-Inch Full-HD IPS LCD Panel. It Has Very Thin Bezels On Three Sides With The Bottom Chin Being Comparatively Thicker. Xiaomi Claims That The Monitor Is 7.3mm At Its Thinnest Point. The Monitor Has A 178-Degree Field Of View And Is TUV Rheinland-Certified For Low Blue Light Emissions.\r\n"
+    },
+    {
+      "_id": "62727a922dd781b4c710afbc",
+      "price": "$ 62",
+      "img": "https://i.ibb.co/SmbtVjm/headphone.jpg",
+      "quantity": 32,
+      "sold":41,
+      "supplier": "Casey Nichols",
+      "product": "Head Phone",
+      "description": "A headset has an attached microphone that lets you talk. It is mostly used in video conferencing or video calls you make, whereas a headphone has an integrated Mic that is not attached or visible, and mostly used for listening to audio files. Let's make a quick comparison between Headphones and Headsets.\r\n"
+    },
+    {
+      "_id": "62727a92a0c6ed578dcf4324",
+      "price": "$ 869",
+      "img": "https://i.ibb.co/jbCvDHb/gpu.jpg",
+      "quantity": 21,
+      "sold":29,
+      "supplier": "Susie Mullen",
+      "product": "GPU",
+      "description": "The majority of GPUs on the market are actually integrated graphics. So, what are integrated graphics and how does it work in your computer? A CPU that comes with a fully integrated GPU on its motherboard allows for thinner and lighter systems, reduced power consumption, and lower system costs.\r\n"
+    },
+    {
+      "_id": "62727a92990e6f6641ebf707",
+      "price": "$ 183",
+      "img": "https://i.ibb.co/R0yKJyv/fan.jpg",
+      "quantity": 36,
+      "sold":47,
+      "supplier": "Thomas Gilbert",
+      "product": "Table Fan",
+      "description": "Buy Conion Table Fans at best price in Bangladesh. Shop online at Best Electronics and buy Conion Table Fans using your Visa, Master Card or DBBL Nexus Card. Get original manufacturer warranty when you buy from Best Electronics, the exclusive distributor of Conion Table Fan.\r\n"
+    },
+    {
+      "_id": "62727a921aaa0ae7e04936f9",
+      "price": "$ 127",
+      "img": "https://i.ibb.co/ct4XJT9/externaldrive.jpg",
+      "quantity": 32,
+      "sold":34,
+      "supplier": "Vilma Brewer",
+      "product": "External Drive",
+      "description": "Western Digital Elements 1TB (1000GB) Portable HDD, WDBUZG0010BBK-BESN, Storage - 1TB, Type - SATA External, Interface - USB 3.00, Free up space on your internal hard drive by transferring files to your WD Elements portable storage and get your laptop moving again. WD build the drive inside to our demanding requirements for durability, shock tolerance, and long-term reliability.\r\n"
+    },
+    {
+      "_id": "62727a92b3a63069bf0f0681",
+      "price": "$ 1,049",
+      "img": "https://i.ibb.co/R3zBqf1/eos6d.jpg",
+      "quantity": 21,
+      "sold":73,
+      "supplier": "Fields Lott",
+      "product": "EOS6D",
+      "description": "The Canon 600D comes with a 3-inch LCD screen for automatic sensor cleaning. The resolution of the display is 1080p. One of the advantages of Rebel T3i is that you can see the live view of the picture on the LCD and you can flip out the installed LCD. The camera user can move it in any way and keep it conveniently. The flip out screen is great for those who want to take pictures as well as do some videography.\r\n"
+    },
+    {
+      "_id": "62727a9207ffaa1b422cb898",
+      "price": "$1276",
+      "img": "https://i.ibb.co/D1rMqVL/camera.jpg",
+      "quantity": 29,
+      "sold":92,
+      "supplier": "Canon",
+      "product": "EARBANG",
+      "description": " Canon announced today the launch of the EOS R5 C, the newest addition to the company’s Cinema EOS System of video production equipment.anon announced today the launch of a new series of lenses for the company’s EF Cinema Lens lineup— the Flex Zoom Lens series of lenses designed to creat.\r\n"
+    },
+    {
+      "_id": "62727a928a59874a7fc3de7c",
+      "price": "$ 130",
+      "img": "https://i.ibb.co/2s4b98b/ipod.jpg",
+      "quantity": 37,
+      "sold":30,
+      "supplier": "Nolan Kemp",
+      "product": "KONNECT",
+      "description": "The iPod is a portable music player developed by Apple Computer. Though it is an Apple product, the iPod can be used with both Macs and PCs. The iTunes software, also created by Apple, is used to organize and transfer songs and playlists to the iPod. Both iTunes and the iPod support a wide variety of audio formats, including MP3, AAC, WAV, and AIFF. MP3 is the most common audio compression format, while AAC is the format used by the iTunes Music Store. WAV and AIFF are nearly identical formats that store CD-quality audio.\r\n"
+    }
+  ]
