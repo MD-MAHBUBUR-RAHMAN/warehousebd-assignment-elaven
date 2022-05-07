@@ -4,7 +4,7 @@ import Product from "../../Shared/Product/Product";
 const Inventories = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("fakedb.json")
+    fetch("http://localhost:5000/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
