@@ -11,6 +11,7 @@ import ManageInventory from "./Pages/ManageInventory/ManageInventory";
 import Register from "./Pages/Login/Register/Register";
 import Required from "./Pages/Login/Required/Required";
 import ProductDetail from "./Pages/ProductDetail/ProductDetail";
+import AddProduct from "./Pages/AddProduct/AddProduct";
 
 function App() {
   return (
@@ -20,12 +21,27 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/detail/:id" element={<ProductDetail />} />
+        <Route
+          path="/detail/:id"
+          element={
+            <Required>
+              <ProductDetail />
+            </Required>
+          }
+        />
         <Route
           path="/manage"
           element={
             <Required>
               <ManageInventory />
+            </Required>
+          }
+        />
+        <Route
+          path="/addproduct"
+          element={
+            <Required>
+              <AddProduct />
             </Required>
           }
         />
