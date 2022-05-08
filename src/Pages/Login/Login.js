@@ -40,6 +40,7 @@ const Login = () => {
       alert("Write your Email please");
     }
   };
+  console.log(user);
 
   if (loading || sending) {
     return <Loading />;
