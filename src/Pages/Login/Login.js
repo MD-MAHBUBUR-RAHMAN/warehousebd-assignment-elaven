@@ -30,7 +30,7 @@ const Login = () => {
     navigate(from, { replace: true });
   };
   // password Reset:-----------
-  const passwordReset = async (event) => {
+  const passwordReset = async () => {
     const email = emailRef.current.value;
     console.log(email);
     if (email) {

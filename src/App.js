@@ -12,6 +12,7 @@ import Register from "./Pages/Login/Register/Register";
 import Required from "./Pages/Login/Required/Required";
 import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 import AddProduct from "./Pages/AddProduct/AddProduct";
+import MyProduct from "./Pages/MyProduct/MyProduct";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/myproduct" element={<MyProduct />} />
         <Route path="/*" element={<Notfound />} />
       </Routes>
 

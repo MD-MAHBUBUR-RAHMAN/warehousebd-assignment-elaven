@@ -19,9 +19,9 @@ const Navbar = () => {
     return <Loading />;
   }
   return (
-    <nav className="flex items-center justify-between py-5 bg-slate-200">
+    <nav className="flex items-center justify-between  md:justify-around py-5 bg-slate-200">
       <Link to="/home">
-        <img className="w-24 ml-16 " src={image} alt="" />
+        <img className="w-24" src={image} alt="" />
       </Link>
       <ul
         className={`md:flex justify-center p-2  absolute  md:static  duration-700 ease-in ${
@@ -32,21 +32,29 @@ const Navbar = () => {
           <Link to="/home">Home</Link>
         </li>
         <li className="mb-2 mr-5 lg:text-xl hover:text-violet-600">
-          <Link to="/blog">BLOG</Link>
-        </li>
-        <li className="mb-2 mr-5 lg:text-xl hover:text-violet-600">
-          <Link to="/manage">MANAGE ITEMS</Link>
+          <Link to="/blog">Blog</Link>
         </li>
 
         {user ? (
-          <li>
-            <button
-              onClick={handleSignOut}
-              className="mr-5 lg:text-xl hover:text-violet-600"
-            >
-              SignOut
-            </button>
-          </li>
+          <>
+            <li className="mb-2 mr-5 lg:text-xl hover:text-violet-600">
+              <Link to="/addproduct">Add Items</Link>
+            </li>
+            <li className="mb-2 mr-5 lg:text-xl hover:text-violet-600">
+              <Link to="/myproduct">My Product</Link>
+            </li>
+            <li className="mb-2 mr-5 lg:text-xl hover:text-violet-600">
+              <Link to="/manage">Manage Items</Link>
+            </li>
+            <li>
+              <button
+                onClick={handleSignOut}
+                className="mr-5 lg:text-xl hover:text-violet-600"
+              >
+                SignOut
+              </button>
+            </li>
+          </>
         ) : (
           <li>
             <Link
