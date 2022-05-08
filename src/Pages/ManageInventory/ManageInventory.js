@@ -3,10 +3,24 @@ import useProducts from "../Hooks/useProducts";
 
 const ManageInventory = () => {
   const [products] = useProducts();
+
+  const handleDelete = (id) => {
+    const proceed = window.confirm("Are you Shure To Delete This Product");
+    if (proceed) {
+      const url = `http://localhost:5000/product/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        });
+    }
+  };
   return (
     <div className="">
       <h2 className="mb-10 text-center sm:text-4xl text-sky-300 font-extrabold font-mono mt-10">
-        manage inventories
+        Manage Inventories
       </h2>
 
       <table className="table-auto mx-auto border mb-10">
@@ -43,7 +57,10 @@ const ManageInventory = () => {
                   <p className="sm:mr-3 sm:mt-12">{product.email} </p>
                 </td>
                 <td>
-                  <button className="sm:mx-4 p-2 rounded-md bg-slate-700 text-red-400">
+                  <button
+                    onClick={() => handleDelete(product._id)}
+                    className="sm:mx-4 p-2 rounded-md bg-slate-700 text-red-400"
+                  >
                     Delet
                   </button>
                 </td>

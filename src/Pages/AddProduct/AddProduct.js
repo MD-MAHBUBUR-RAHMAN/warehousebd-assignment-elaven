@@ -2,9 +2,9 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const AddProduct = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     const url = `http://localhost:5000/product`;
     fetch(url, {
       method: "POST",
@@ -74,6 +74,7 @@ const AddProduct = () => {
           {...register("sold", { required: true })}
         />
         <input
+          onClick={reset()}
           className="block mx-auto bg-slate-700 px-5 py-3 mt-10 mb-5 rounded-md hover:text-blue-400 md:w-36 border-none text-red-400 md:font-semibold "
           type="submit"
         />
