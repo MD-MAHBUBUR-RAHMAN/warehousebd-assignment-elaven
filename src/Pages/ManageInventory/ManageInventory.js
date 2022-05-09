@@ -14,7 +14,7 @@ const ManageInventory = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           const remaining = products.filter((product) => product._id !== id);
           setProducts(remaining);
         });
@@ -62,7 +62,7 @@ const ManageInventory = () => {
                 <td>
                   <button
                     onClick={() => handleDelete(product._id)}
-                    className="sm:mx-4 p-2 rounded-md bg-slate-700 text-red-400"
+                    className="block mx-auto bg-slate-700 px-5 py-3 mt-10 mb-5 rounded-md hover:text-blue-400 md:w-36 border-none text-red-400 md:font-semibold"
                   >
                     Delet
                   </button>

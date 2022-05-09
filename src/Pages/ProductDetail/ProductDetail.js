@@ -5,6 +5,8 @@ const ProductDetail = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [product, setProduct] = useState({});
+
+  // console.log(product);
   useEffect(() => {
     const url = `http://localhost:5000/product/${id}`;
     fetch(url)
@@ -12,8 +14,24 @@ const ProductDetail = () => {
       .then((data) => setProduct(data));
   }, [id]);
 
-  const productReduccedlHandle = () => {
-    console.log("click");
+  const productReduccedlHandle = (product) => {
+    // const deliverwdQuantity = product.quantity;
+    // // const updatedQuantity = {deliverwdQuantity}
+    console.log(product);
+    // console.log(product);
+
+    // const url = `http://localhost:5000/product/${id}`;
+    // fetch(url, {
+    //   method: "PUT",
+    //   headers: {
+    //     "content-type": "application/json",
+    //   },
+    //   body: JSON.stringify(),
+    // })
+    //   .then((res) => res.json())
+    //   .then((result) => {
+    //     console.log(result);
+    //   });
   };
 
   const handleToDetail = () => {
@@ -50,15 +68,15 @@ const ProductDetail = () => {
 
           <input
             onClick={() => productReduccedlHandle(id)}
-            className="font-bold font-mono bg-sky-400 hover:bg-sky-500 cursor-pointer px-10 py-3 rounded-xl block mx-auto mt-4 mb-4 "
+            className="block mx-auto bg-slate-700 px-5 py-3 mt-10 mb-5 rounded-md hover:text-blue-400 md:w-36 border-none text-red-400 md:font-semibold"
             type="button"
-            value="Reduce"
+            value="DELIVERED"
           />
         </div>
       </div>
       <button
         onClick={handleToDetail}
-        className="font-bold font-mono bg-sky-400 hover:bg-sky-500 px-10 py-3 rounded-xl block mx-auto mt-4 mb-4 "
+        className="block mx-auto bg-slate-700 px-5 py-3 mt-10 mb-5 rounded-md hover:text-blue-400 md:w-36 border-none text-red-400 md:font-semibold "
       >
         Manage Inventory
       </button>

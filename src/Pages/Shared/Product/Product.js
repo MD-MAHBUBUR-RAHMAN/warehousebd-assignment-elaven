@@ -36,7 +36,7 @@ const Product = ({ products }) => {
 
         <input
           onClick={() => productDetailHandle(_id)}
-          className="font-bold font-mono bg-sky-400 hover:bg-sky-500 cursor-pointer px-10 py-3 rounded-xl block mx-auto my-4 "
+          className="block mx-auto bg-slate-700 px-5 py-3 mt-10 mb-5 rounded-md hover:text-blue-400 md:w-36 border-none text-red-400 md:font-semibold"
           type="button"
           value="Update"
         />

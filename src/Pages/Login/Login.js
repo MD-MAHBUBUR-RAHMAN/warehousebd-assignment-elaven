@@ -27,8 +27,10 @@ const Login = () => {
     const password = passwordRef.current.value;
     await signInWithEmailAndPassword(email, password);
     event.target.reset();
-    navigate(from, { replace: true });
   };
+  if (user) {
+    navigate(from, { replace: true });
+  }
   // password Reset:-----------
   const passwordReset = async () => {
     const email = emailRef.current.value;
