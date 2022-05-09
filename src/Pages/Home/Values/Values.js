@@ -11,7 +11,7 @@ const Values = () => {
           Written By <span className="text-red-400">Ware House BD</span> CEO
         </p>
         <hr className="my-5 border-1 border-red-500 bg-red-400" />
-        <p className="sm:text-3xl font-extralight text-center">
+        <p className="sm:text-2xl font-extralight text-center">
           Core values are the fundamental beliefs of a person or organization.
           The core values are the guiding principles that dictate behavior and
           action. Core values can help people to know what is right from wrong,

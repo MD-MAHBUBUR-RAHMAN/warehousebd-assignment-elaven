@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import useProducts from "../Hooks/useProducts";
 
 const ManageInventory = () => {
-  const [products] = useProducts();
+  const [products, setProducts] = useProducts();
 
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you Shure To Delete This Product");
@@ -14,6 +15,8 @@ const ManageInventory = () => {
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
+          const remaining = products.filter((product) => product._id !== id);
+          setProducts(remaining);
         });
     }
   };
@@ -69,6 +72,11 @@ const ManageInventory = () => {
           })}
         </tbody>
       </table>
+      <Link className="flex justify-center mb-10" to="/addproduct">
+        <button className="sm:mx-4 p-2 rounded-md bg-slate-700 text-red-400 text-xl">
+          Add New
+        </button>
+      </Link>
     </div>
   );
 };

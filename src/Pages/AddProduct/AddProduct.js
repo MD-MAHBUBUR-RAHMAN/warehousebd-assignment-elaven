@@ -16,6 +16,7 @@ const AddProduct = () => {
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
+        reset();
       });
   };
 
@@ -74,7 +75,6 @@ const AddProduct = () => {
           {...register("sold", { required: true })}
         />
         <input
-          onClick={reset()}
           className="block mx-auto bg-slate-700 px-5 py-3 mt-10 mb-5 rounded-md hover:text-blue-400 md:w-36 border-none text-red-400 md:font-semibold "
           type="submit"
         />
