@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Banner from "./Banner/Banner";
 import Inventories from "./Inventories/Inventories";
 import Values from "./Values/Values";
+import Why from "./Why/Why";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
+      <Why />
       <Inventories />
       <Values />
       <button
