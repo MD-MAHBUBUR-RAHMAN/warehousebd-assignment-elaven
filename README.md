@@ -4,7 +4,7 @@ My app is used to manage Electronics Products stock :
 
 # app name is `WARE HOUSE BD`
 
-## you wii get [live site link here]()
+## you wii get [live site link here](https://frozen-crag-58968.herokuapp.com/)
 
 ## seerver site [Click to get my server](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-MD-MAHBUBUR-RAHMAN)
 

@@ -8,7 +8,7 @@ const ManageInventory = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you Shure To Delete This Product");
     if (proceed) {
-      const url = `http://localhost:5000/product/${id}`;
+      const url = `https://frozen-crag-58968.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })

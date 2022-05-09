@@ -12,7 +12,7 @@ const MyProduct = () => {
   // Load data from api:----------
   useEffect(() => {
     const email = user?.email;
-    const url = `http://localhost:5000/product?email=${email}`;
+    const url = `https://frozen-crag-58968.herokuapp.com/product?email=${email}`;
     if (email) {
       fetch(url)
         .then((res) => res.json())
@@ -26,7 +26,7 @@ const MyProduct = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you Shure To Delete This Product");
     if (proceed) {
-      const url = `http://localhost:5000/product/${id}`;
+      const url = `https://frozen-crag-58968.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })

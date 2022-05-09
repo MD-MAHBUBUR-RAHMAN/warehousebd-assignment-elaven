@@ -4,7 +4,7 @@ import Product from "../../Shared/Product/Product";
 const Inventories = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://frozen-crag-58968.herokuapp.com/product")
       .then((res) => res.json())
       .then((data) => setProducts(data.slice(0, 6)));
   }, []);
